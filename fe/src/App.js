@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {Component, useState} from 'react'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Home from './cmm/container/Home'
+import {Route} from 'react-router-dom'
+
+class App extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      selectedFile: null,
+    }
+  
+
+  return(<>
+  
+  <h1>Video or Photo Uploading...</h1>
+  <Route path='/' component={Home} exact/>
+  <form>
+    업로드를 시작합니다.<br/>
+  <input type="file" name="file" onChange={null} />
+  <button type="button" name="choice" onClick={null}/>
+  </form>
+  
+  </>)}
 }
-
-export default App;
+export default App
