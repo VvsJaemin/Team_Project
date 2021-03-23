@@ -59,4 +59,4 @@ sourceSets{
 }
 package.json
 application.yml
-buildgradle
+build.gradle
