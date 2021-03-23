@@ -57,3 +57,6 @@ sourceSets{
 		}
 	}
 }
+package.json
+application.yml
+build.gradle
